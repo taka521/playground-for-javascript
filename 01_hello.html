@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript本格入門</title>
+</head>
+<body>
+    <script type="text/javascript">
+        window.alert("Hello World");
+    </script>
+    <noscript>Javascriptが利用できません。</noscript>
+    <!--
+        * javascriptは scriptタグ 内に記載していく。
+        * scriptタグの type属性 はデフォルトで "text/javascript" のため、省略しても良い。
+        * javascriptが利用できない場合には、noscriptタグ内に記載する。
+
+        また、script要素を記述する場所は、大きく分けて３つ。
+
+        1. <body>要素配下の任意の場所。
+        2. <body>要素配下のうち、</body>閉じタグの直前。
+        3. <head>要素の配下。
+
+        1は可読性/保守性の観点から、基本的に使うべきではない。
+
+        2の場合、ページの描画を行った後にスクリプトの読み込みを行うのでページ表示の高速化に繋がる。
+        一般的に、Javascriptによる処理は、ページが全て準備できてから行うべきものなの。
+
+        3は、2でまかなえない場合に利用する。
+        Javascriptのルールとして、「関数を呼び出す<script>要素よりも、関数定義の<script>要素を先に定義する」というのがある。
+        そのため、<body>要素配下で関数を呼び出す必要がある場合には、<head>要素の配下で事前に読み込んでおく必要がある。
+    -->
+</body>
+</html>
