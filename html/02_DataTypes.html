@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"/>
+    <title>データ型</title>
+</head>
+<body>
+<script>
+
+    // テンプレート文字
+    let name = "田中";
+    let message = `こんにちは、${name}さん。
+    今日も暑いですねー。`;
+    console.log(message);
+
+    /* 実行結果
+        こんにちは、田中さん。
+    今日も暑いですねー。
+     */
+
+    // 配列リテラル
+    var arrayData = ["a", "b", "c"];
+    console.log(arrayData[1]); // 実行結果：b
+
+    var arrayData = ["a", ["b", "c"], "d"];
+    console.log(arrayData[1][1]);  // 実行結果：c
+
+</script>
+</body>
+</html>
