@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"/>
+    <title>演算子</title>
+</head>
+<body>
+    <script>
+        // 分割代入（配列）
+        let data = [0, 1, 2, 3];
+        let [x0, x1, x2, x3] = data;
+
+        console.log(x0);
+        console.log(x1);
+
+        let [y0, y1, ...other] = data;
+
+        console.log(other);
+
+        // 分割代入（オブジェクト）
+        let book = {title: 'Javascript入門', price: 1800, publish: 'IT評論社'};
+        let {title, price, memo = '特になし'} = book;
+        console.log(title);
+        console.log(price);
+        console.log(memo);
+    </script>
+</body>
+</html>
